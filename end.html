@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Quizz Estudantil</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    </head>
+    <body>
+        <script>
+            var teste = new Audio();
+            teste.src = '../Quizz_Estudantil/áudio/questão2.mpeg';
+        </script>
+        <div class="container">
+            <div id="end" class="flex-center flex-column">
+                <h1 id="finalScore">0</h1>
+                <form class="end-form-container">
+                    <h2 id="end-text">Coloque seu nome para salvar!!</h2>
+                    <input type="text" name="name" id="username" placeholder="Coloque o seu nome">
+                    
+                    <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled><div class="menu">
+                        <div onmouseover="teste.play()">Salvar</div></div></button>
+                    
+                    </form>
+                    <a href="nivel.html" class="btn"><div class="menu">
+                        <div onmouseover="teste.play()">Jogue de novo</div></div></a>
+                    <a href="highscores.html" class="btn"><div class="menu">
+                        <div onmouseover="teste.play()">Ver Ranking</div></div></a>
+            </div>
+        </div>
+        <script src="end.js"></script>
+    </body>
+</html>
